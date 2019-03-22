@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<button onclick="myFunction()">Date</button>
+
+<p id="date"></p>
+<p id="date1"></p>
+
+<script>
+function myFunction() {
+  var date = new Date("aug 09 2018"); 
+  var tmpdate = date;
+   document.getElementById("date").innerHTML = tmpdate.toDateString();
+  date.setDate(date.getDate()-date.getDay());
+  document.getElementById("date1").innerHTML = date.toDateString();
+}
+</script>
+
+</body>
+</html>
